@@ -33,7 +33,7 @@ function initDoods() {
   els.slice(count).forEach((el) => el.remove());
 
   // Start them clear of the nav and buttons so nothing is hidden on load.
-  const keepClear = [...document.querySelectorAll('.hero .nav, .hero .latest, .hero .hint')]
+  const keepClear = [...document.querySelectorAll('.hero .nav, .hero .latest')]
     .map((el) => el.getBoundingClientRect())
     .filter((r) => r.width)
     .map((r) => ({ x: r.left - box.left - 16, y: r.top - box.top - 16, w: r.width + 32, h: r.height + 32 }));

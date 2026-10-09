@@ -114,18 +114,6 @@ html:not(.js) [data-play-all] { display: none; }
 .btn-primary:hover { color: var(--ink); translate: -2px -2px; box-shadow: 6px 6px 0 var(--paper); }
 .btn-primary:active { translate: 2px 2px; box-shadow: 1px 1px 0 var(--paper); }
 
-.hint {
-  position: absolute;
-  z-index: 3;
-  right: var(--gutter);
-  bottom: clamp(4rem, 10vh, 6rem);
-  display: none;
-  font: 1.15rem/1 var(--hand);
-  rotate: -5deg;
-  opacity: .85;
-}
-@media (min-width: 56rem) { .js .hint { display: block; } }
-
 /* ─── doods: field observations, pinned around the hero ─────────────── */
 
 .doods { position: absolute; inset: 0; z-index: 1; display: none; }
