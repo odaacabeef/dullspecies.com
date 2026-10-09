@@ -1,0 +1,88 @@
+{
+  "links": [
+    { "name": "Spotify", "url": "https://open.spotify.com/artist/4R78HwD7Z49KxQ4F3R9GqL" },
+    { "name": "Apple Music", "url": "https://music.apple.com/us/artist/dull-species/1552536171" },
+    { "name": "YouTube", "url": "https://www.youtube.com/channel/UCr2OruJE4RhtWmiBIKpGhhQ" },
+    { "name": "Instagram", "url": "https://www.instagram.com/dullspecies/" }
+  ],
+  "releases": [
+    {
+      "title": "Quarantine Daydream (Stereo 77 Remix)",
+      "date": "2025-04-02",
+      "cover": "quarantine-daydream-stereo-77-remix.webp",
+      "color": "#e3b766",
+      "spotify": "https://open.spotify.com/track/0KAxOJDhQJrLuXDwzdDrvx",
+      "apple": "https://music.apple.com/us/album/quarantine-daydream-stereo-77-remix-remix/1805656190",
+      "tracks": [
+        { "title": "Quarantine Daydream (Stereo 77 Remix)", "youtube": "ASDpVXqLVLE", "duration": "5:20" }
+      ]
+    },
+    {
+      "title": "Your Opinion Matters",
+      "date": "2024-11-22",
+      "cover": "your-opinion-matters.webp",
+      "color": "#24a8dc",
+      "spotify": "https://open.spotify.com/track/5j18lTAkuIJ2hreqyrvGHd",
+      "apple": "https://music.apple.com/us/album/your-opinion-matters/1778210846",
+      "tracks": [
+        { "title": "Your Opinion Matters", "youtube": "fyj5QvVk1ic", "duration": "4:25" }
+      ]
+    },
+    {
+      "title": "Never Better",
+      "date": "2023-11-24",
+      "cover": "never-better.webp",
+      "color": "#f0b429",
+      "spotify": "https://open.spotify.com/track/0Zl4CdWuBVXsvt5DvPycwS",
+      "apple": "https://music.apple.com/us/album/never-better/1716617106",
+      "tracks": [
+        { "title": "Never Better", "youtube": "1fji8RuSclc", "duration": "4:08" }
+      ]
+    },
+    {
+      "title": "Graves",
+      "date": "2023-02-24",
+      "cover": "graves.webp",
+      "color": "#3fb39a",
+      "spotify": "https://open.spotify.com/track/2rdQvggagJ6WiclyfCOjM3",
+      "apple": "https://music.apple.com/us/album/graves/1672266856",
+      "tracks": [
+        { "title": "Graves", "youtube": "duA568UdyV0", "duration": "3:43" },
+        { "title": "Friction Ridges", "youtube": "MehP_FvaM_M", "duration": "3:51" }
+      ]
+    },
+    {
+      "title": "Last Place",
+      "date": "2022-07-22",
+      "cover": "last-place.webp",
+      "color": "#8a8ff0",
+      "spotify": "https://open.spotify.com/track/1VTR891G1NDOOUGtEOnQU7",
+      "apple": "https://music.apple.com/us/album/last-place/1633928392",
+      "tracks": [
+        { "title": "Last Place", "youtube": "Te8DqLBzH04", "duration": "3:53" }
+      ]
+    },
+    {
+      "title": "Into Nothing",
+      "date": "2022-01-28",
+      "cover": "into-nothing.webp",
+      "color": "#ff6a1a",
+      "spotify": "https://open.spotify.com/track/4l7Z3nCM3f17ylSKpuAlsU",
+      "apple": "https://music.apple.com/us/album/into-nothing/1603371489",
+      "tracks": [
+        { "title": "Into Nothing", "youtube": "1bxsUokioNk", "duration": "3:46" }
+      ]
+    },
+    {
+      "title": "Quarantine Daydream",
+      "date": "2021-02-12",
+      "cover": "quarantine-daydream.webp",
+      "color": "#e05a4c",
+      "spotify": "https://open.spotify.com/album/1sXYrXnqwPtaYrnhexiG8h",
+      "apple": "https://music.apple.com/us/album/quarantine-daydream/1552540633",
+      "tracks": [
+        { "title": "Quarantine Daydream", "youtube": "iMiLNstYy8M", "duration": "3:15" }
+      ]
+    }
+  ]
+}

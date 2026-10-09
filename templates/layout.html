@@ -1,12 +1,33 @@
-{{define "layout"}}
-<!doctype html>
-<html>
+{{define "layout"}}<!doctype html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>{{template "title"}}</title>
-  <link rel="stylesheet" href="/static/stylesheets/normalize.css">
-  <link rel="stylesheet" href="/static/stylesheets/main.css?{{.BuildID}}">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{template "title" .}}</title>
+  <meta name="description" content="{{template "description" .}}">
+  <meta name="theme-color" content="#0e0c0a">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Dull Species">
+  <meta property="og:title" content="{{template "title" .}}">
+  <meta property="og:description" content="{{template "description" .}}">
+  <meta property="og:url" content="https://dullspecies.com/">
+  <meta property="og:image" content="https://dullspecies.com/static/images/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+
   <link rel="icon" type="image/png" href="/static/images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,400..900,0..100,0..1;1,9..144,400..900,0..100,0..1&display=block">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Space+Mono:wght@400;700&display=swap">
+  <link rel="stylesheet" href="{{asset "stylesheets/main.css"}}">
+
+  <script>document.documentElement.classList.add('js');</script>
+  <script type="module" src="{{asset "js/main.js"}}"></script>
+  {{block "head" .}}{{end}}
+
   {{if .Build}}
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-H8CVJK7FJ5"></script>
@@ -19,11 +40,31 @@
   {{end}}
 </head>
 <body>
-  <section id="main">
-    {{template "body"}}
-  </section>
-  <canvas id="doods"></canvas>
-  <script src="/static/js/main.js?{{.BuildID}}"></script>
+  {{template "body" .}}
 </body>
 </html>
+{{end}}
+
+{{define "nav"}}
+<div class="nav">
+  {{block "nav-home" .}}<h1 class="nav-home">Dull Species</h1>{{end}}
+  <nav aria-label="Dull Species elsewhere">
+    <ul class="nav-links">
+      {{range .Links}}<li><a href="{{.URL}}" target="_blank" rel="me noopener">{{.Name}}</a></li>{{end}}
+    </ul>
+  </nav>
+</div>
+{{end}}
+
+{{define "doods"}}
+<div class="doods" aria-hidden="true">
+  {{range .Doods}}
+  <figure class="dood">
+    <div class="dood-card">
+      <img src="{{.Src}}" alt="" width="266" height="190" draggable="false">
+      <figcaption>{{.Caption}}</figcaption>
+    </div>
+  </figure>
+  {{end}}
+</div>
 {{end}}

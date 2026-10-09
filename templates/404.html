@@ -1,0 +1,20 @@
+{{define "title"}}Not found · Dull Species{{end}}
+
+{{define "description"}}Specimen not found.{{end}}
+
+{{define "nav-home"}}<a class="nav-home" href="/">← Dull Species</a>{{end}}
+
+{{define "body"}}
+<header class="hero">
+  {{template "nav" .}}
+  {{template "doods" .}}
+
+  <div class="latest">
+    <p class="eyebrow">404 · Specimen not found</p>
+    <h1 class="latest-title">Whatever lived here may be extinct.</h1>
+    <div class="latest-actions">
+      <a class="btn btn-primary" href="/">Back to the habitat</a>
+    </div>
+  </div>
+</header>
+{{end}}
